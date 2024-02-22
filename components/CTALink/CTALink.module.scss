@@ -1,0 +1,31 @@
+@import 'styles/cntrl';
+
+.ctaLink {
+  background-color: #FF4100;
+  border: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  color: #fff;
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight: 900;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.15s ease;
+  &:hover,
+  &:focus {
+    background: #1A00FD;
+  }
+  @include for('Mobile') {
+    border-radius: size(1);
+    font-size: size(20);
+    line-height: size(20);
+    letter-spacing: size(0.18);
+  }
+  @include for('Desktop') {
+    border-radius: size(2);
+    font-size: size(19);
+    line-height: size(24);
+    letter-spacing: size(1.2);
+  }
+}
